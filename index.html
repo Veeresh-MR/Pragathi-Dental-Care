@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/10299/10299283.png">
+    <title>Pragathi Dental Care | Premium Luxury Dentistry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- ScrollTrigger for scroll-based animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- Three.js for 3D effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom cursor library -->
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+
+
+
+    
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+
+     -->
+</head>
+<body>
+
+
+
+        
+    
+
+
+
+    
+    
+    <!-- Cursor elements -->
+    <canvas class="trail" id="trail"></canvas>
+    <div class="cursorGlow" id="cursorGlow"></div>
+    <div class="cursorRing" id="cursorRing"></div>
+
+
+
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+        <div class="loader"></div>
+    </div> -->
+    
+
+    <!-- Header -->
+    <header class="luxury-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#home">
+                    <span style="font-size: 35px;">
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/10299/10299283.png" alt="Clean Icon" style="width: 45px; height: 45px;">
+                        Pragathi Dental Care -->
+                        <h1 style="
+                            font-family: 'Cinzel', serif; 
+                            font-size: 40px; 
+                            font-weight: 600; 
+                            display: flex; 
+                            align-items: center; 
+                            gap: 12px; 
+                            justify-content: center; 
+                            text-transform: uppercase;">
+
+                            <img src="https://cdn-icons-png.flaticon.com/512/10299/10299283.png" 
+                                alt="Clean Icon" 
+                                style="width: 45px; height: 45px;">
+
+                            <span style="color: #c9a227;">Pragathi</span> 
+                            <span style="color: #fff;">Dental Care</span>
+                            </h1>
+                    </span>   
+                </a>
+
+                
+
+
+                <!-- <a href="#home" class="nav-link">
+                    <span style="font-size: 35px;">
+                        <img src="dent_pic2.jpg" alt="Clean Icon" style="width: 130px; height: 100px;">   
+                    </span>   
+                </a> -->
+
+                <!-- <a href="#home">
+                    <span style="font-size: 35px;">
+                        <img src="dent_pic1.jpg" alt="Clean Icon" style="width: 150px; height: 100px;">
+                        Pragathi Dental
+                    </span>   
+                </a> -->
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#results" class="nav-link">Results</a></li>
+                    <li><a href="#location" class="nav-link">Location</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>  
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="luxury-hero">
+                <div class="hero-overlay"   ></div>
+                <div class="hero-content">
+                    <h1>Pragathi <br> <span>Dental Care</span></h1>
+                    <p class="subtitle">Where luxury meets oral health perfection</p>
+                    <div class="hero-btns">
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Instant Consultation
+                        </a>
+                        <a href="tel:+919743940608" class="btn btn-secondary">
+                            <i class="fas fa-phone-alt"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-scroll">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+
+             <!-- Luxury Features -->
+            <div class="luxury-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-gem"></i> -->
+                         <img src="https://cdn-icons-png.flaticon.com/512/12592/12592245.png" alt="Clean Icon" style="width: 50px; height: 50px;">
+                    </div>  
+                    <h3>Deep Cleaning</h3>
+                    <p>Professional plaque and tartar removal. Leave your smile feeling fresh and healthy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-gem"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/10299/10299283.png" alt="Tooth Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>General Dentistry</h3>
+                    <p>Routine exams and treatments for all ages.Your foundation for lifelong oral health.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-gem"></i> -->
+                       <img src="https://cdn-icons-png.flaticon.com/512/1386/1386815.png" alt="Implant Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>Swiss-engineered titanium tooth replacements.Natural look, lifelong durability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-gem"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/18339/18339939.png" alt="Aligner Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Clear Aligners</h3>
+                    <p>Invisible braces for a confident smile.Comfortable, removable, and effective.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-gem"></i> -->
+                         <img src="https://cdn-icons-png.flaticon.com/512/15760/15760633.png" alt="Toothache Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Pain Relief</h3>
+                    <p>Immediate care for dental emergencies.Gentle solutions for toothache and discomfort.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-spa"></i> -->
+                          <img src="https://cdn-icons-png.flaticon.com/512/6200/6200746.png" alt="Scaling Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Scaling & Polishing</h3>
+                    <p>Remove surface stains and calculus build-up.Maintain your smile’s health and brightness.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-user-shield"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/18339/18339987.png" alt="Broken Tooth Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Tooth Restoration</h3>
+                    <p>Repair chips, cracks, and fractures.Restore form, strength, and function.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-helicopter"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/14466/14466570.png" alt="Teeth Icon" style="width: 50px; height: 50px;">  
+                    </div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Design your dream smile with precision.Veneers, bonding, and artistic enhancements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-helicopter"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/4147/4147680.png" alt="Dentist Tools Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Advanced Tools</h3>
+                    <p>Modern technology for precision care.Gentle procedures with superior results.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-helicopter"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/4147/4147618.png" alt="Broken Tooth Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Emergency Dentistry</h3>
+                    <p>Fast treatment for broken or lost teeth.Regain function and aesthetics right away.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- <i class="fas fa-helicopter"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/2441/2441132.png" alt="Tooth Whitening Icon" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Brighten your smile with safe, lasting results.Professional-grade treatment in minutes.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="signature-services">
+                <div class="section-header">
+                    <h2>Our <span>Best Services</span></h2>
+                    <p>Unparalleled dental artistry for the discerning client</p>
+                </div>
+                <div class="services-grid">
+                  <!-- General Dentistry -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1667133295315-820bb6481730?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnJhY2VzfGVufDB8fDB8fHww')"></div>
+                    <div class="service-content">
+                        <h3>General Dentistry</h3>
+                        <p>Comprehensive oral health care including checkups, cleanings, and basic treatments to maintain healthy teeth and gums.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="https://www.freepik.com/free-photos-vectors/general-dentistry/19" class="btn btn-text">More Info</a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Teeth Whitening -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1664529845836-433c172142ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFRlZXRoJTIwV2hpdGVuaW5nfGVufDB8fDB8fHww')"></div>
+                    <div class="service-content">
+                        <h3>Teeth Whitening</h3>
+                        <p>Professional whitening treatments to remove stains and discoloration for a brighter, whiter smile.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Implants -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1593022356769-11f762e25ed9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RGVudGFsJTIwSW1wbGFudHN8ZW58MHx8MHx8fDA%3D')"></div>
+                    <div class="service-content">
+                        <h3>Dental Implants</h3>
+                        <p>Permanent solution for missing teeth that looks, feels, and functions like natural teeth.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Root Canal Treatment -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1744142824792-ea371bd1783d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Um9vdCUyMENhbmFsJTIwVHJlYXRtZW50fGVufDB8fDB8fHww')"></div>
+                    <div class="service-content">
+                        <h3>Root Canal Treatment</h3>
+                        <p>Painless procedure to save infected teeth by removing damaged pulp and sealing the tooth.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Crowns -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1675516161546-1894798c71de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGVudGFsJTIwQ3Jvd25zfGVufDB8fDB8fHww')"></div>
+                    <div class="service-content">
+                        <h3>Dental Crowns</h3>
+                        <p>Custom-made caps that restore damaged teeth to their natural shape, size, and function.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Bridges -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fERlbnRhbCUyMEJyaWRnZXN8ZW58MHx8MHx8fDA%3D')"></div>
+                    <div class="service-content">
+                        <h3>Dental Bridges</h3>
+                        <p>Fixed solution to replace one or more missing teeth by anchoring to adjacent teeth.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Veneers -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1661436629100-ba3c5ea70514?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RGVudGFsJTIwVmVuZWVyc3xlbnwwfHwwfHx8MA%3D%3D')"></div>
+                    <div class="service-content">
+                        <h3>Dental Veneers</h3>
+                        <p>Thin, custom-made shells that cover the front surface of teeth to improve appearance.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orthodontics (Braces) -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1720685193975-3b449a7cb905?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8T3J0aG9kb250aWNzJTIwKEJyYWNlcyl8ZW58MHx8MHx8fDA%3D')"></div>
+                    <div class="service-content">
+                        <h3>Orthodontics (Braces)</h3>
+                        <p>Treatment to straighten teeth and correct bite issues using braces or aligners.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Invisalign -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8SW52aXNhbGlnbnxlbnwwfHwwfHx8MA%3D%3D')"></div>
+                    <div class="service-content">
+                        <h3>Invisalign</h3>
+                        <p>Clear, removable aligners that straighten teeth without metal braces.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pediatric Dentistry -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1661582098393-2a49755cdf53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fFBlZGlhdHJpYyUyMERlbnRpc3RyeXxlbnwwfHwwfHx8MA%3D%3D  ')"></div>
+                    <div class="service-content">
+                        <h3>Pediatric Dentistry</h3>
+                        <p>Specialized dental care for children to maintain healthy teeth from an early age.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gum Treatment -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1578057287201-3812f175e204?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEd1bSUyMFRyZWF0bWVudHxlbnwwfHwwfHx8MA%3D%3D')"></div>
+                    <div class="service-content">
+                        <h3>Gum Treatment</h3>
+                        <p>Treatment for gum diseases like gingivitis and periodontitis to maintain healthy gums.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tooth Extraction -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1661631350192-d82387ddaa32?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VG9vdGglMjBFeHRyYWN0aW9ufGVufDB8fDB8fHww')"></div>
+                    <div class="service-content">
+                        <h3>Tooth Extraction</h3>
+                        <p>Gentle removal of damaged or problematic teeth when necessary.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dentures -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1612283105859-6e2585710acd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RGVudHVyZXN8ZW58MHx8MHx8fDA%3D')"></div>
+                    <div class="service-content">
+                        <h3>Dentures</h3>
+                        <p>Removable replacements for missing teeth and surrounding tissues.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teeth Scaling & Polishing -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1715876268462-0b971630edd9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VGVldGglMjBTY2FsaW5nJTIwJTI2JTIwUG9saXNoaW5nfGVufDB8fDB8fHww')"></div>
+                    <div class="service-content">
+                        <h3>Teeth Scaling & Polishing</h3>
+                        <p>Professional cleaning to remove plaque, tartar, and stains for healthier teeth.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Fillings -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1593022356269-609ed284b3c3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRlbnRhbCUyMGNhdml0eXxlbnwwfHwwfHx8MA%3D%3D')"></div>
+                    <div class="service-content">
+                        <h3>Dental Fillings</h3>
+                        <p>Treatment for cavities using tooth-colored composite or amalgam fillings.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wisdom Tooth Removal -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1712258084525-5beab086e5c6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8V2lzZG9tJTIwVG9vdGh8ZW58MHx8MHx8fDA%3D')"></div>
+                    <div class="service-content">
+                        <h3>Wisdom Tooth Removal</h3>
+                        <p>Surgical extraction of impacted or problematic wisdom teeth.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cosmetic Dentistry -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1702598583569-1625e29fed97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fENvc21ldGljJTIwRGVudGlzdHJ5fGVufDB8fDB8fHww')"></div>
+                    <div class="service-content">
+                        <h3>Cosmetic Dentistry</h3>
+                        <p>Various treatments to enhance the appearance of your smile.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smile Makeover -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVldGh8ZW58MHx8MHx8fDA%3D')"></div>
+                    <div class="service-content">
+                        <h3>Smile Makeover</h3>
+                        <p>Combination of cosmetic procedures to completely transform your smile.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Emergency -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1723187823945-bd116325da6a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVldGh8ZW58MHx8MHx8fDA%3D')"></div>
+                    <div class="service-content">
+                        <h3>Dental Emergency</h3>
+                        <p>Immediate care for dental trauma, severe pain, or other urgent dental issues.</p>
+                        <div class="service-btns">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary">Book Now</a>
+                            <!-- <a href="#pricing" class="btn btn-text">View Pricing</a> -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section">
+            <div class="pricing-section">
+                <div class="section-header">
+                    <h2>Tailored <span>Treatment Values</span></h2>
+                    <p>Your personalized path to a radiant smile, redefined with excellence</p>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <!-- Cosmetic Dentistry -->
+                    <div class="pricing-card">
+                        <h3>Essential Whitening</h3>
+                        <div class="price">Investment Starting From</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Professional-grade whitening</li>
+                            <li><i class="fas fa-check"></i> Quick 60-minute transformation</li>
+                            <li><i class="fas fa-check"></i> Long-lasting brilliance</li>
+                            <li><i class="fas fa-check"></i> Customized to sensitivity level</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp" >Get Your Quote</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Premium Veneers</h3>
+                        <div class="price">Personalized Value</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Handcrafted porcelain artistry</li>
+                            <li><i class="fas fa-check"></i> 10+ year guarantee</li>
+                            <li><i class="fas fa-check"></i> Natural aesthetics & durability</li>
+                            <li><i class="fas fa-check"></i> Smile preview before procedure</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." class="btn btn-primary"  target="_blank">Schedule Consultation</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Smile Makeover Plan</h3>
+                        <div class="price">Tailored Package</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Full-mouth aesthetic transformation</li>
+                            <li><i class="fas fa-check"></i> Combination of cosmetic treatments</li>
+                            <li><i class="fas fa-check"></i> 3D digital smile design included</li>
+                            <li><i class="fas fa-check"></i> Concierge care & support</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots."  target="_blank" class="btn btn-primary" class="contact-method whatsapp">Design My Smile</a>
+                    </div>
+
+                    <!-- Implants & Restoration -->
+                    <div class="pricing-card">
+                        <h3>Elite Implant Solutions</h3>
+                        <div class="price">All-Inclusive Care</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Lifetime-supported implants</li>
+                            <li><i class="fas fa-check"></i> Painless guided surgeries</li>
+                            <li><i class="fas fa-check"></i> Biocompatible & long-lasting</li>
+                            <li><i class="fas fa-check"></i> Complete post-care included</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Request Details</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Digital Crown & Bridge</h3>
+                        <div class="price">Custom Estimation</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> CAD/CAM designed crowns</li>
+                            <li><i class="fas fa-check"></i> Metal-free options available</li>
+                            <li><i class="fas fa-check"></i> Long-term warranty included</li>
+                            <li><i class="fas fa-check"></i> Same-day restoration available</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Talk to an Expert</a>
+                    </div>
+
+                    <!-- Orthodontics -->
+                    <div class="pricing-card">
+                        <h3>Invisible Braces Program</h3>
+                        <div class="price">Comprehensive Alignment Plan</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Clear aligners for discreet correction</li>
+                            <li><i class="fas fa-check"></i> Monthly progress check-ins</li>
+                            <li><i class="fas fa-check"></i> No wires, no brackets</li>
+                            <li><i class="fas fa-check"></i> Ideal for teens & professionals</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Explore Plans</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Advanced Braces (Metal & Ceramic)</h3>
+                        <div class="price">Consult for Options</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Traditional & aesthetic options</li>
+                            <li><i class="fas fa-check"></i> Correction for all bite issues</li>
+                            <li><i class="fas fa-check"></i> Includes full follow-up schedule</li>
+                            <li><i class="fas fa-check"></i> Orthodontist supervision</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Book Ortho Visit</a>
+                    </div>
+
+                    <!-- Surgical / Specialty -->
+                    <div class="pricing-card">
+                        <h3>Painless Tooth Extractions</h3>
+                        <div class="price">Gentle Approach Packages</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Surgical & non-surgical options</li>
+                            <li><i class="fas fa-check"></i> Wisdom tooth & complex cases</li>
+                            <li><i class="fas fa-check"></i> Sedation available for comfort</li>
+                            <li><i class="fas fa-check"></i> Rapid recovery protocols</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Consult Now</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Gum Rejuvenation</h3>
+                        <div class="price">Based on Assessment</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Laser-assisted gum therapy</li>
+                            <li><i class="fas fa-check"></i> Treatment for recession & bleeding</li>
+                            <li><i class="fas fa-check"></i> Improves oral hygiene & smile</li>
+                            <li><i class="fas fa-check"></i> Performed by periodontist</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Restore Your Gums</a>
+                    </div>
+
+                    <!-- Wellness / VIP -->
+                    <div class="pricing-card">
+                        <h3>Preventive Wellness Plans</h3>
+                        <div class="price">Membership Options</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Bi-annual cleanings & check-ups</li>
+                            <li><i class="fas fa-check"></i> Free X-rays & diagnostics</li>
+                            <li><i class="fas fa-check"></i> Member-only discounts</li>
+                            <li><i class="fas fa-check"></i> Early access to new treatments</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Join the Club</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Full-mouth Care</h3>
+                        <div class="price">By Private Appointment Only</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ultra-private clinic experience</li>
+                            <li><i class="fas fa-check"></i> Priority scheduling</li>
+                            <li><i class="fas fa-check"></i> Custom smile curation</li>
+                            <li><i class="fas fa-check"></i> 1-on-1 care by chief specialists</li>
+                        </ul>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Book Confidential Session</a>
+                    </div>
+                </div>
+
+                <div class="pricing-footer">
+                    <p>Every smile is a story — let’s craft yours with care, precision, and luxury. Reach out for your personalized plan.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+919743940608" class="btn btn-primary"><i class="fas fa-phone"></i> Call for Estimate</a>
+                        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Inquiry</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Results Section -->
+        <section id="results" class="section">
+            <div class="results-section">
+                <div class="section-header">
+                    <h2>Smile <span>Transformations</span></h2>
+                    <!-- <p>Real patient results from our clinic</p> -->
+                </div>
+                <div class="results-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="veneers">Veneers</button>
+                        <button class="tab-btn" data-tab="whitening">Whitening</button>
+                        <button class="tab-btn" data-tab="implants">Implants</button>
+                        <button class="tab-btn" data-tab="orthodontics">Orthodontics</button>
+                        <button class="tab-btn" data-tab="braces">Braces</button>
+                        <button class="tab-btn" data-tab="surgery">Surgery</button>
+                    </div>
+                    <div class="tab-content active" id="veneers">
+                        <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before </h4> -->
+                                <img src="https://imgs.search.brave.com/UNFwGO8tZeJehV4r5BpFEBPPxVNyNJEqHbVEHzqD7qg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kZW50/YWxhbmRza2luLmNv/bS5hdS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8xMC9TdHVu/bmluZy1TbWlsZS1U/cmFuc2Zvcm1hdGlv/bi1WZW5lZXJzLUJl/Zm9yZS1hbmQtQWZ0/ZXIucG5n" alt="veneers">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/uS8IXpHpDA6tzDaBPsufnBV7rcm8G1HN9PJ5UH4KoUg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kZW50/YWxhbmRza2luLmNv/bS5hdS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wNi9Qb2Nl/bGFpbi12ZW5lZXJz/LWJlZm9yZS1hbmQt/YWZ0ZXItc2Vydmlj/ZS1hdC1EZW50YWwt/YW5kLVNraW4tQ2xp/bmljLWluLU1lbGJv/dXJuZS5wbmc" alt="veneers">
+                            </div>
+                            <div class="before">
+                                <h4>Before </h4>
+                                <img src="before_1.jpg" alt="veneers">
+                            </div>
+                            <div class="before">
+                                <h4>After </h4>
+                                <img src="After_1.jpg" alt="veneers">
+                            </div>
+                            <div class="before">
+                                <h4>Before </h4>
+                                <img src="before_2.jpg" alt="veneers">
+                            </div>
+                            <div class="before">
+                                <h4>After </h4>
+                                <img src="After_2.jpg" alt="veneers">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before</h4> -->
+                                <img src="https://imgs.search.brave.com/0156Xk1IjrU0ovfiHGadf-uorEnCrD3gu7jR_lMdZqc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kZW50/YWxhbmRza2luLmNv/bS5hdS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wNi9WZW5l/ZXJzLWJlZm9yZS1h/bmQtYWZ0ZXItdHJl/YXRtZW50LWF0LURl/bnRhbC1hbmQtU2tp/bi1DbGluaWMtaW4t/TWVsYm91cm5lLTEu/cG5n" alt="veneers">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/gclO2F3LRcLiK8Z_gzMpid8c1BG4GL9XGIDKXiUcYuM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZGF0b2Ntcy1hc3Nl/dHMuY29tLzQ2NzA0/LzE2Mjk1MDI2OTUt/MjI5OTMwNjE4NTU2/ODUzMDM1NjU2MTg0/MjQzNDc4NzgxNTkx/NzMzMzcxN24uanBn/P2F1dG89Zm9ybWF0/LGNvbXByZXNzJnc9/NDAw" alt="veneers">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-content" id="whitening">
+                        <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before</h4> -->
+                                <img src="https://imgs.search.brave.com/Jj7qWmVsZ9_WVq4_l5rpQ4m7-0MkZy87b8MJpjkyapo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kcm1v/bmljYXNjaGVlbC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDgvaW1hZ2Vf/NjQ4MzQ0MS0xMC0x/LmpwZw" alt="whitening">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/Zk3trBRCI9hesdINNE1Xu3sOGcNweLS9wLIhkxwrY98/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/d2hpdGVzZGVudGFs/LmNvLnVrL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzA3L0Vu/bGlnaHRlbi1UZWV0/aC1XaGl0ZW5pbmct/QmVmb3JlLUFuZC1B/ZnRlci0xLTEuanBn" alt="whitening">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before</h4> -->
+                                <img src="https://imgs.search.brave.com/_zjVK1Asgu3JD2meNGSUMZUc2IIfdkV8Gw2otUwCfQs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzk3LzExLzA0/LzM2MF9GXzExOTcx/MTA0MDhfM1UzUTJF/VWJBZm5HcVNHcnhi/UUU1Nk50UlBLZmxD/WlcuanBn" alt="whitening">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/zwh_ehiQvefjQn04Mf5INRo7dO89ajOcpuJe8FZ5ECY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/d2hpdGVzZGVudGFs/LmNvLnVrL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzA3L1Bo/aWxpcHMtWm9vbS1I/b21lLVRlZXRoLVdo/aXRlbmluZy1CZWZv/cmUtQW5kLUFmdGVy/LTMtMS5qcGc" alt="whitening">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-content" id="implants">
+                        <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before</h4> -->
+                                <img src="https://imgs.search.brave.com/k70ENxUwfXVyNdW9rMWdxi8RxI_uAlBIiWXZOYhx1Wo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2ZkZW50YWxpbXBs/YW50cy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDIv/aW1wbGFudGJyaWRn/ZXM0LWFsZXgtcmFi/aW5vdmljaC1zZmRl/bnRhbGltcGxhbnRz/LmpwZw" alt="implants">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/opw5IcTmOsrqyeJASQHBjWgAhaDvV6AwdPQfTyz6l3o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2ZkZW50YWxpbXBs/YW50cy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDIv/aW1wbGFudGJyaWRn/ZXMtc2luZ2xlMy1h/bGV4LXJhYmlub3Zp/Y2gtc2ZkZW50YWxp/bXBsYW50cy5qcGc" alt="implants">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="result-card">
+                            <div class="before">
+                                <h4>Before</h4>
+                                <img src="before_4.jpg" alt="implants">
+                            </div>
+                            <div class="after">
+                                <h4>After</h4>
+                                <img src="After_4.jpg" alt="implants">
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="before">
+                                <h4>Before</h4>
+                                <img src="before_3.jpg" alt="implants">
+                            </div>
+                            <div class="after">
+                                <h4>After</h4>
+                                <img src="After_3.jpg" alt="implants">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before</h4> -->
+                                <img src="https://imgs.search.brave.com/w4ie4lZ4880DEW19-Nm8a7jgF-0GPnAsMedjCTpIbdI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2ZkZW50YWxpbXBs/YW50cy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDIv/aW1wbGFudGJyaWRn/ZXMzLWFsZXgtcmFi/aW5vdmljaC1zZmRl/bnRhbGltcGxhbnRz/LmpwZw" alt="implants">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/ONPx8H6endr6xI6trD7hAYjB6iypEBJSa6_pYoxsLpQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2ZkZW50YWxpbXBs/YW50cy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDIv/aW1wbGFudGJyaWRn/ZXMtc2luZ2xlNC1h/bGV4LXJhYmlub3Zp/Y2gtc2ZkZW50YWxp/bXBsYW50cy5qcGc" alt="implants">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-content" id="orthodontics">
+                        <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before</h4> -->
+                                <img src="https://imgs.search.brave.com/VeLiC6jelnf9iXgf9acyNRpR-5jSB-nxCwwCejd6yqU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FjL2Nj/LzFlL2FjY2MxZTgy/MTg0OTk0NDM5MGEz/ZmRiNTVjODk2ODhl/LmpwZw" alt="orthodontics">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/uxUkRSNGJmXvAaQFF1g-IytseMOUViIL_OvD--uyD6s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jcG1v/cnRoby5jb20vd3At/Y29udGVudC91cGxv/YWRzL2JiLXBsdWdp/bi9jYWNoZS83dC1s/YW5kc2NhcGUtYmEy/MDkyMzA4YmRjMWE0/NzUxYzY5ZGQ0ZGNk/NzY1ZjktNWUzMzA3/OWExOGIyMC5qcGc" alt="orthodontics">
+                            </div>
+                        </div>
+                        <br>
+                         <div class="result-card">
+                            <div class="before">
+                                <!-- <h4>Before</h4> -->
+                                <img src="https://imgs.search.brave.com/Xr4I1Y94YhbSj5_Q50DGyou5CCdfciEKxgEiu6OqkKc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzcwLzlm/L2YyLzcwOWZmMjI5/NTYwMjI5NTRhZDRh/YTUzODBiMzgwMGQ1/LmpwZw" alt="orthodontics">
+                            </div>
+                            <div class="after">
+                                <!-- <h4>After</h4> -->
+                                <img src="https://imgs.search.brave.com/SXoDhOSbVAyBCz3AA1GsWklceo3UqGAkpgiqleVgJXM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jcG1v/cnRoby5jb20vd3At/Y29udGVudC91cGxv/YWRzL2JiLXBsdWdp/bi9jYWNoZS83dC1s/YW5kc2NhcGUtYmEy/MDkyMzA4YmRjMWE0/NzUxYzY5ZGQ0ZGNk/NzY1ZjktNWUzMzA3/OWExOGIyMC5qcGc" alt="orthodontics">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                     <!-- Braces Section -->
+            <div class="tab-content" id="braces">
+                <div class="result-card">
+                    <div class="before">
+                        <h4>Before</h4>
+                        <img src="before_5.jpg" alt="braces-before">
+                    </div>
+                    <div class="after">
+                        <h4>Before</h4>
+                        <img src="before_6.jpg" alt="braces-after">
+                    </div>
+                </div>
+                <br>
+                <div class="result-card">
+                    <div class="before">
+                        <h4>Before</h4>
+                        <img src="before_7.jpg" alt="braces-before2">
+                    </div>
+                    <div class="after">
+                        <h4>After</h4>
+                        <img src="After_5.jpg" alt="braces-after2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Surgery Section -->
+            <div class="tab-content" id="surgery">
+                <div class="result-card">
+                    <div class="before">
+                        <h4>Before</h4>
+                        <img src="before_8.jpg" alt="surgery-before">
+                    </div>
+                    <div class="after">
+                        <h4>After</h4>
+                        <img src="After_6.jpg" alt="surgery-after">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+                    
+
+                </div>
+                <div class="results-cta">
+                    <p>Ready for your transformation?</p>
+                    <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">
+                        <i class="fab fa-whatsapp"></i> Book Your Consultation
+                    </a>
+                </div>
+
+
+
+
+
+
+            <!-- Reviews Section -->
+            <div class="reviews-section">
+            <h2>What Our Patients Say</h2>
+            <div class="reviews-grid">
+                <!-- First 6 reviews always visible -->
+                <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Absolutely the best dental care I've ever experienced. The staff is so friendly and professional."</p>
+                <h4>- Ananya S.</h4>
+                </div>
+                <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Got my teeth whitening done here. Amazing results and a luxurious experience!"</p>
+                <h4>- Rahul K.</h4>
+                </div>
+                <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Dr. Vinay is very gentle and explains everything clearly. Highly recommend."</p>
+                <h4>- Meera T.</h4>
+                </div>
+                <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Painless root canal! Never thought I’d say that. Great care and service."</p>
+                <h4>- Arjun P.</h4>
+                </div>
+                <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Beautiful clinic, advanced tools, and premium treatment. Worth every penny."</p>
+                <h4>- Sneha R.</h4>
+                </div>
+                <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Quick emergency treatment when I had tooth pain. They saved my night!"</p>
+                <h4>- Kiran M.</h4>
+                </div>
+
+                <!-- Hidden reviews -->
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"Got clear aligners from here. Comfortable and already seeing results."</p>
+                <h4>- Priya L.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"They truly care about patients and the clinic feels like a luxury spa."</p>
+                <h4>- Manoj D.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"Professional, polite and very clean. Highly recommended for families."</p>
+                <h4>- Kavitha J.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"I was nervous about dental visits but they made me feel relaxed and comfortable."</p>
+                <h4>- Ramesh V.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"Teeth whitening was quick, painless, and my smile looks amazing now."</p>
+                <h4>- Akash N.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"Best dental implant experience. Feels like my natural tooth!"</p>
+                <h4>- Divya M.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"Super clean, advanced equipment, and friendly doctors."</p>
+                <h4>- Varun P.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"Their pediatric dentistry is excellent. My kids love coming here."</p>
+                <h4>- Shalini K.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"Quick, painless tooth extraction. Recovery was smooth."</p>
+                <h4>- Naveen R.</h4>
+                </div>
+                <div class="review-card hidden-review">
+                <div class="review-stars">★★★★★</div>
+                <p>"I finally love my smile again. Thank you for the smile makeover!"</p>
+                <h4>- Pooja C.  <br><p>and many .....</p></h4>
+                </div>
+            </div><br>
+
+            <!-- Show More button -->
+            <div class="reviews-more">
+                <button id="show-more-reviews" class="btn btn-primary">Show More Reviews</button>
+                
+            </div>
+            
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="section">
+            <div class="location-section">
+                <div class="section-header">
+                    <h2>Our <span>Location</span></h2>
+                    <p>Visit our state-of-the-art facility</p>
+                </div>
+                <div class="location-container">
+                    <div class="location-info">
+                        <h3>Pragathi Dental Care <br>KOTTURU</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Kotturu, Karnataka 583134</p>
+                        <div class="contact-numbers">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." class="contact-method whatsapp" target="contact-method whatsapp">
+                                <i class="fab fa-whatsapp"></i> +91 97439 40608
+                            </a>
+                            <a href="tel:+919743940608" class="contact-number">
+                                <i class="fas fa-phone-alt"></i> +91 97439 40608
+                            </a>
+                        </div>
+                        <div class="hours">
+                            <h4>Clinic Hours</h4>
+                            <p>Monday : 9:00 AM - 7:00 PM</p>
+                            <p>Thursday : 9:00 AM - 7:00 PM</p>
+                            <!-- <p>Sunday: Emergency only(Text Us)</p> -->
+                        </div>
+                        <a href="https://maps.app.goo.gl/Xo3UiBKzCndi8eDUA" class="btn btn-primary">
+                            <i class="fas fa-map-marker-alt"></i> Get Directions
+                        </a>
+                    </div>
+                    <div class="location-map">
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7156815591045!2d72.8328643149006!3d19.04375868710996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sDental%20Avenue!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe> -->
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.367336175684!2d76.22468255810021!3d14.828545091578732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb9efb4bf0b40ef%3A0xfb4fafaeb5419ca9!2sPragathi%20Dental%20care%20Dr%20Vinay%20Kumar%20Dentist!5e0!3m2!1sen!2sin!4v1754297084935!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+
+
+                <br>
+
+
+
+                <div class="location-container">
+                    <div class="location-info">
+                        <h3>Pragathi Dental Care <br>HAGARIBOMMANAHALLI</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Hagaribommanahalli, Karnataka 583134</p>
+                        <div class="contact-numbers">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." class="contact-method whatsapp" target="contact-method whatsapp">
+                                <i class="fab fa-whatsapp"></i> +91 97439 40608
+                            </a>
+                            <a href="tel:+919743940608" class="contact-number">
+                                <i class="fas fa-phone-alt"></i> +91 97439 40608
+                            </a>
+                        </div>
+                        <div class="hours">
+                            <h4>Clinic Hours</h4>
+                            <p>Wed : 9:00 AM - 7:00 PM</p>
+                            <p>Friday : 9:00 AM - 7:00 PM</p>
+                            <p>Sat : 10:00 AM - 4:00 PM</p>
+                            <p>Sunday : 10:00 AM - 1:30 PM</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/9LkCguM6vF7uC8xf9" class="btn btn-primary">
+                            <i class="fas fa-map-marker-alt"></i> Get Directions
+                        </a>
+                    </div>
+                    <div class="location-map">
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7156815591045!2d72.8328643149006!3d19.04375868710996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sDental%20Avenue!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe> -->
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.090008408956!2d76.19794147521692!3d15.043136985497382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb9c3c76df1c8db%3A0x6e035651688a9647!2sPragathi%20Dental%20Care%20DR%20VINAY%20Dentist!5e0!3m2!1sen!2sin!4v1754297403557!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <br>
+        <br>
+        <br>
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+        <div class="section-header">
+            <h2>Our <span>Gallery</span></h2>
+            <p>Explore our clinic, treatments, and success stories</p>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="gallery-images">
+            <img src="dent_pic1.jpg" alt="Clinic Image">
+            <img src="dent_pic2.jpg" alt="Dental Treatment">
+            <img src="img_2.jpg" alt="Luxury Interior">
+            <img src="img_7.jpg" alt="Smile Transformation">
+        </div>
+
+        <!-- Video Gallery -->
+        <div class="gallery-videos">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/0s35QCFg7p0" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br>
+
+        <div class="gallery-videos">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/TYmbLj78L-c" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br>
+
+        <div class="gallery-videos">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/v1Ha8vOyLTE" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br>
+
+        <div class="gallery-videos">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/743yWYzvBj0" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br>
+
+        <div class="gallery-videos">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/k9APZnCDHBg?si=PP9hdaRRwX9nobUa" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br>
+
+        <div class="gallery-videos">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/bvhjsBNgae8" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br>
+
+        
+        </section>
+
+
+
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+        <div class="section-header">
+            <h2>About <span>Dr. Vinay</span></h2>
+            <p>Meet the visionary behind Pragathi Dental Care</p>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+            <img src="image.png" alt="Dr. Vinay - Luxury Dentist">
+            </div>
+            <div class="about-content">
+            <h3>Dr. Vinay Kumar N S </h3>
+            <p>BDS, F.A.G.E in Manipal, Oral Impalantology, Ortho Dentist at Bombay</p>
+            <p>
+                
+
+                <p>With Over <span id="doctor-experience"><strong>12</strong></span> years of experience in advanced cosmetic and restorative dentistry, <br>
+                Dr. Vinay is a renowned dental surgeon dedicated to redefining luxury dental care in Karnataka. 
+                He completed his <strong>BDS from Rajiv Gandhi University of Health Sciences</strong> and pursued 
+                a specialization in <strong>Aesthetic, Implant Dentistry (MDS) & Oral Impalantology</strong>.
+                </p>
+            </p>
+            <p>
+                Dr. Vinay has trained internationally in <strong>smile design, digital dentistry, and advanced 
+                implantology</strong>, ensuring that every patient receives world-class treatment. Known for his 
+                precision and artistry, he has successfully transformed <strong>10,000+ smiles</strong>.
+            </p>
+            <ul class="about-highlights">
+                <li><i class="fas fa-check-circle"></i> Specialist in Aesthetic Dentistry & Implants</li>
+                <li><i class="fas fa-check-circle"></i> Member of Indian Dental Association</li>
+                <!-- <li><i class="fas fa-check-circle"  id="doctor-experience"></i> 12+ Years of Excellence in Dentistry</li> -->
+                <li><i class="fas fa-check-circle"></i> Trusted by 10,000+ Happy Patients</li>
+            </ul>
+            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="btn btn-primary" class="contact-method whatsapp">Book Appointment</a>
+            </div>
+            <div class="gallery-images">
+            <img src="img_1.jpg" alt="Clinic Image">
+            <img src="img_6.jpg" alt="Luxury Interior">
+            <img src="img_8.jpg" alt="Luxury Interior">
+            <img src="img_9.jpg" alt="Luxury Interior">
+            <img src="img_7.jpg" alt="Luxury Interior">
+            <img src="img_10.jpg" alt="Luxury Interior">
+            <img src="img_12.jpg" alt="Luxury Interior">
+            <!-- <img src="img_10.jpg" alt="Luxury Interior"> -->
+            <img src="img_11.jpg" alt="Luxury Interior">
+            <img src="img_12.jpg" alt="Luxury Interior">
+            <img src="img_13.jpg" alt="Luxury Interior">
+            <img src="img_14.jpg" alt="Luxury Interior">
+            <img src="img_15.jpg" alt="Luxury Interior">
+            <img src="img_16.jpg" alt="Luxury Interior">
+            <img src="img_10.jpg" alt="Luxury Interior">
+            <img src="dent_pic1.jpg" alt="Smile Transformation">
+            <img src="dent_pic2.jpg" alt="Smile Transformation">
+        </div>
+        </div>
+        </section>
+
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-section">
+                <div class="section-header">
+                    <h2>Contact <span>Us</span></h2>
+                    <p>Schedule your luxury dental experience</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Ready to transform your smile? Contact us through any of these channels:</p>
+                        <div class="contact-methods">
+                            <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank" class="contact-method whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp: +91 97439 40608</span>
+                            </a>
+                            <a href="tel:+919743940608" class="contact-method phone">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Call: +91 97439 40608</span>
+                            </a>
+                            <a href="mailto:drvinaypdc@gmail.com" class="contact-method email">
+                                <i class="fas fa-envelope"></i>
+                                <span>drvinaypdc@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="emergency-contact">
+                            <h4><i class="fas fa-exclamation-circle"></i> Dental Emergency?</h4>
+                            <p>Call us immediately at <a href="tel:+919876543210">+91 97439 40608</a> for urgent care</p>
+                        </div>
+                        <div class="social-links">
+                            <!-- <h4>Follow Us</h4> -->
+                            <!-- <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="contact-image" style="background-image: url('img_2.jpg')"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+       <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <!-- Clinic Info Column -->
+            <div class="footer-column">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10299/10299283.png" alt="Pragathi Dental Logo" style="width: 40px; height: 40px;">
+                        <span>Pragathi Dental</span>
+                    </div>
+                    <p>Premium dental care with personalized treatment since 2011.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank"  class="footer-contact-link" >
+                        <i class="fab fa-whatsapp"></i> +91 97439 40608
+                    </a>
+                    <a href="tel:+919743940608" class="footer-contact-link">
+                        <i class="fas fa-phone-alt"></i> +91 97439 40608
+                    </a>
+                    <a href="mailto:drvinaypdc@gmail.com" class="footer-contact-link">
+                        <i class="fas fa-envelope"></i> drvinaypdc@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clinic Hours Column -->
+            <div class="footer-column">
+                <div class="footer-hours">
+                    <h3>Kotturu Clinic</h3>
+                    <ul>
+                        <li><span>Monday</span> <span>9:30 AM - 8:00 PM</span></li>
+                        <li><span>Thursday</span> <span>9:30 AM - 8:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Second Clinic Hours Column -->
+            <div class="footer-column">
+                <div class="footer-hours">
+                    <h3>Hagaribommanahalli Clinic</h3>
+                    <ul>
+                        <li><span>Tuesday</span> <span>9:30 AM - 2:00 PM<br>5:00 PM - 7:30 PM</span></li>
+                        <li><span>Wednesday</span> <span>9:30 AM - 2:00 PM<br>5:00 PM - 7:30 PM</span></li>
+                        <li><span>Friday</span> <span>9:30 AM - 2:00 PM<br>5:00 PM - 7:30 PM</span></li>
+                        <li><span>Saturday</span> <span>9:30 AM - 2:00 PM<br>5:00 PM - 7:30 PM</span></li>
+                        <li><span>Sunday</span> <span>10:00 AM - 1:30 PM </span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="footer-column">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="nav-link ">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                        <li><a href="#results" class="nav-link">Results</a></li>
+                        <li><a href="#location" class="nav-link">Location</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; 2023 Pragathi Dental Care. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="https://www.dentalclinicmanual.com/documents/policies-and-procedures-manual-template.pdf">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="https://www.deltadental.com/us/en/protect-my-smile/dental-insurance-101/glossary-of-dental-terms.html">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-credit">
+                <p>Designed by <i style="color: #ff6b6b;">Veeresh M R </i> for your smile</p>
+                <p>Website design inquiries ( Text/Call ) : <a href="tel:+918073675550" style="color: #D4AF37;">+91 80736 75550</a></p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp with default message -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919743940608?text=Hi%20Dr.%20Vinay,%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Pragathi%20Dental%20Care.%20Please%20let%20me%20know%20available%20slots." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
