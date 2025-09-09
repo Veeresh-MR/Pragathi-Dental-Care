@@ -2341,3 +2341,30 @@ img {
 .hidden-review {
   display: none;
 }
+
+
+
+
+
+/* Add this to your style.css file */
+/* Only show custom cursor on devices that support hover */
+@media (hover: hover) {
+    body {
+        cursor: none;
+    }
+    
+    .cursorGlow,
+    .cursorRing,
+    canvas.trail {
+        display: block;
+    }
+}
+
+/* Hide custom cursor elements on touch devices */
+@media (hover: none) {
+    .cursorGlow,
+    .cursorRing,
+    canvas.trail {
+        display: none;
+    }
+}
