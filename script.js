@@ -1,3 +1,27 @@
+// <script>
+// Add this at the beginning of your script.js file
+function hasHoverSupport() {
+    return window.matchMedia('(hover: hover)').matches;
+}
+
+// Modify the DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function() {
+    // Only initialize custom cursor if device supports hover
+    if (hasHoverSupport()) {
+        // Hide default cursor
+        document.body.style.cursor = 'none';
+        
+        // Your existing cursor initialization code here...
+        const glow = document.getElementById('cursorGlow');
+        const ring = document.getElementById('cursorRing');
+        const trail = document.getElementById('trail');
+        
+        // Rest of your cursor code...
+    }
+    
+    // Rest of your existing code...
+});
+
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Preloader
@@ -560,6 +584,7 @@ const experience = currentYear - startYear;
 if (experienceElement) {
   experienceElement.textContent = experience;
 }
+
 
 
 
